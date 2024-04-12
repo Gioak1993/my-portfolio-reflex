@@ -24,7 +24,8 @@ rx.center(
         width='60%',
             ),
             align='center',
+            min_height='75vh',
         ),
         footer(),
-    ),
+)
     

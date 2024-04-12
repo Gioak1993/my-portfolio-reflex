@@ -32,9 +32,13 @@ def index() -> rx.Component:
                 nav_bar(),
                 rx.center(
                     rx.vstack(
-                    rx.avatar(src='/Avatar.png', fallback='GK', size='8', radius='full'),
-                    rx.heading("Giovanny Kelly", size="9"),
-                    rx.text("Freelance backend and software developer"),
+                    rx.hstack(
+                        rx.avatar(src='/Avatar.png', fallback='GK', size='8', radius='full'),
+                        rx.vstack(
+                            rx.heading("Giovanny Kelly", _as='h1', size="8" ,margin='0.3rem',),
+                            rx.text("Freelance backend and software developer", margin='0.3rem',),
+                            ),
+                        ),
                     rx.heading("About Me", as_='h2', width="80%"),
                     rx.blockquote('''Im a Civil Engineer based on United States, which turns career paths, the love for innovations made me focus more on the development side of the things,
                                     lets build something awesome together!
@@ -43,7 +47,7 @@ def index() -> rx.Component:
                                   ),
 
                     rx.button(
-                        "Check out our docs!",
+                        "Check out my work!",
                         on_click=lambda: rx.redirect(docs_url),
                         size="4",
                     ),

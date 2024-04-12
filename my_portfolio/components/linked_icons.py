@@ -5,7 +5,7 @@ def linked_icon (icon:str, src:str, external = True) -> rx.Component:
         rx.hstack(
             rx.flex(
                 rx.icon(icon, spacing='1'),
-                on_click=rx.redirect(
+                on_click=lambda: rx.redirect(
                     src,
                     external=external
                 )
