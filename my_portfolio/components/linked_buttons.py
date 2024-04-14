@@ -1,4 +1,3 @@
-from turtle import width
 import reflex as rx
 
 def linked_button (icon:str, src:str, text='', external = True) -> rx.Component:

@@ -1,4 +1,3 @@
-from turtle import width
 import reflex as rx
 from my_portfolio.components.navbar import nav_bar
 from my_portfolio.components.footer import footer
