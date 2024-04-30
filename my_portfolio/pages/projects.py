@@ -13,8 +13,8 @@ rx.center(
     rx.card(
     rx.image(src='/localxdeal.png'),
     rx.box(
-        rx.heading('Ecommerce', color='white'),
-        rx.text('This is a project set to display current available products for a local liquidator', color='white'),
+        rx.heading('Ecommerce'),
+        rx.text('This is a project set to display current available products for a local liquidator'),
         ),
         on_click=rx.redirect('https://www.localxdeal.com',external=True),
         cursor='pointer',

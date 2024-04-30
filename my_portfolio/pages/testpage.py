@@ -40,7 +40,6 @@ class ChangeText(rx.State):
             self.text = "Click Me"
 
 
-
 def test():
     return  rx.vstack(
             nav_bar(), 
